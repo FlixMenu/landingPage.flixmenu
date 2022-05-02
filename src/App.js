@@ -2,6 +2,7 @@
 import React from "react"
 import "./index.css"
 import Aos from "aos"
+import { motion } from "framer-motion"
 
 Aos.init()
 
@@ -23,6 +24,19 @@ export default function App() {
             </div>
           </div>
         </div>
+        <h1 className="ml-3 p-3 text-white-200 font-extrabold text-[50px]">Animation</h1>
+        <br />
+        <br />
+        <br />
+        <motion.div
+          animate={{
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, 270, 270, 0],
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+          }}
+          transition={{ repeat: Infinity, duration: 2 }}
+          className="w-[100px] h-[100px] p-[10px] bg-orange-500 rounded-lg ml-[100px]"
+        ></motion.div>
       </div>
       <ColorCodes />
     </React.Fragment>
