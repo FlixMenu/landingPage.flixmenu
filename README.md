@@ -1,5 +1,5 @@
 <a href="https://httpS://twitter.com/flixxmenu"><p align="center">
-<img src="https://raw.githubusercontent.com/FlixMenu/FlixMenu-web/staging/.github_assets/logo.png?token=GHSAT0AAAAAABSOTI5HE4QDAH7RQR3J7TCKYTQIZUA"/>
+<img src="https://raw.githubusercontent.com/FlixMenu/FlixMenu-web/prod/github_assets/logo.png?token=GHSAT0AAAAAABSOTI5HE4QDAH7RQR3J7TCKYTQIZUA"/>
 
 </p></a>
 <p align="center">
