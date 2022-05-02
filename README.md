@@ -1,7 +1,8 @@
 <a href="https://httpS://twitter.com/flixxmenu"><p align="center">
-<img src="https://raw.githubusercontent.com/FlixMenu/FlixMenu-web/prod/github_assets/logo.png?token=GHSAT0AAAAAABSOTI5H7CFEUWBAIRWWNIBGYTQJBLA"/>
+<img src="https://github.com/FlixMenu/FlixMenu-web/blob/prod/logo.png?raw=true"/>
+</p></a>
 
-
+<a href=""><p align="center">
 <img align="center"
 src="https://img.shields.io/twitter/follow/flixxmenu?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
 />
