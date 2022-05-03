@@ -24,3 +24,13 @@ src="https://img.shields.io/twitter/follow/flixxmenu?logo=twitter&style=for-the-
 # Contributing.
 
 ### To get started contributing , Please go through [Contributing.md](https://github.com/FlixMenu/FlixMenu-web/blob/staging/Contributing.md) carefully.
+
+</br>
+
+# Available tasks / features to be implemented
+
+FlixMenu contain `vast` varieties of functionalities waiting to be implemented. Visit **[Priorities Lists](https://github.com/FlixMenu/FlixMenu-web/issues/20)** and see all features and also guidelines to adhere to.
+
+# License
+
+FlixMenu follows and adhere to the `The MIT License (MIT)`.
