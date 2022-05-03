@@ -6,22 +6,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "orange": {
+        "flixOrange": {
+          200: "#fda63f",
           500: "#fd8141",
           800: "#ff6b3d"
         },
-        "white": {
+        "flixWhite": {
           200: "#fff",
           400: "#ccc",
           600: "#ececec",
           800: "#777"
         },
-        "dark": {
+        "flixDark": {
           500: "#30303c",
           800: "#1f1d2b"
         },
-
-      }
+      },
+      width: {
+        "md": "2.5rem"
+      },
     },
   },
   plugins: [],
