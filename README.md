@@ -23,14 +23,14 @@ src="https://img.shields.io/twitter/follow/flixxmenu?logo=twitter&style=for-the-
 
 # Quick Start
 
-- 1 Clone the repo
+- Clone the repo
 
 ```bash
   git clone https://github.com/FlixMenu/FlixMenu-web.git
 ```
-- 2 Fork the repo.
+- Fork the repo.
 
-- 3 Move into the root downloaded directory.
+- Move into the root downloaded directory.
 
 ```bash
   C:/user/john/desktop> cd FlixMenu-web
@@ -40,47 +40,47 @@ src="https://img.shields.io/twitter/follow/flixxmenu?logo=twitter&style=for-the-
   npm install or yarn
 ```
 
-- 4 Make some changes. But before making any changes, run `git fetch` or `git pull` and see if thew main branch commit is ahead of yours, this would tell if an update has been made to the repo.
+- Make some changes. But before making any changes, run `git fetch` or `git pull` and see if thew main branch commit is ahead of yours, this would tell if an update has been made to the repo.
 
-- 5 Create a separate branch
+- Create a separate branch
 
 ```bash
   git branch myDummyBranch
 ```
 
-- 6 Move into that branch
+- Move into that branch
 
 ```bash
   git checkout myDummyBranch
 ```
 
-- 7 Check if youre actually in the branch which you created
+- Check if youre actually in the branch which you created
 
 ```bash
   git branch
 ```
 
-- 8 Stage all changes
+- Stage all changes
 
 ```bash
   git add .
 ```
 
-- 9 Commit all changes
+- Commit all changes
 
 ```bash
   git commit -m "explain exactly what you did"
 ```
 
-- 10 Push all changes to that branch
+- Push all changes to that branch
 
 ```bash
   git push -u origin myDummyBranch
 ```
 
-- 11 Make a PR, with brief description
+- Make a PR, with brief description
 
-- 12 Wait untill It merged ( That only if it doesnt have any conflict with the main branch )
+- Wait untill It merged ( That only if it doesnt have any conflict with the main branch )
 
 
 # Contributing.
