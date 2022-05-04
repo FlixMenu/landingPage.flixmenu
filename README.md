@@ -34,6 +34,10 @@ src="https://img.shields.io/twitter/follow/flixxmenu?logo=twitter&style=for-the-
 
 ```bash
   C:/user/john/desktop> cd FlixMenu-web
+
+  # and run 
+
+  npm install or yarn
 ```
 
 - 4 Make some changes.n But before making any changes, run `git fetch` or `git pull` and see if thew main branch commit is ahead of yours, this would tell if an update has been made to the repo.
