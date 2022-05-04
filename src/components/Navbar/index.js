@@ -5,9 +5,9 @@ import tplogo from "../../assets/img/tp-logo.png"
 
 function Navbar() {
     return (
-        <div className="relative w-screen h-auto z-[999]">
+        <div className="relative w-screen h-auto z-[1000]">
             {/* main */}
-            <div className="flex align-center justify-between w-screen mx-auto md:p-5 px-2 py-2">
+            <div className="flex align-center justify-between w-screen mx-auto py-2 px-0 md:p-5 md:container">
                 <div className="flex flex-row align-start justify-start w-6/12 md:w-screen p-3 md:p-0">
                     <img src={tplogo} alt="" className="w-[45px]  transition-all" />
                     <h3 className='mx-5 mt-2 font-bold text-[18px] text-flixOrange-500 hidden md:flex'>FlixMenu</h3>
