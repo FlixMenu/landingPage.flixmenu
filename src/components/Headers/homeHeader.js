@@ -34,9 +34,9 @@ function HomeHeader() {
     }
 
     return (
-        <div className="relative w-screen h-[auto] h-max-[100vh] overflow-x-hidden bg-flixDark-800">
+        <div className="relative w-screen h-[auto] h-max-[100vh] overflow-x-hidden max-auto bg-flixDark-800">
             <Navbar />
-            <div className="relative top-0 left-0 flex flex-row align-center justify-between  w-screen h-screen flex-wrap md:flex-nowrap md:flex-row ">
+            <div className="relative top-0 left-0 flex flex-row align-center justify-between  w-screen h-screen flex-wrap md:flex-nowrap md:flex-row lg:container mx-auto">
 
                 <div className="relative md:absolute top-0 w-full  flex align-center justify-center flex-col h-auto md:w-[50%] md:h-screen">
                     <div className="md:ml-[20px] md:w-[500px] h-[450px] p-3 md:p-0 sm:p-12 z-10">
@@ -63,7 +63,7 @@ function HomeHeader() {
                         </div>
                     </div>
                 </div>
-                <div className="relative sm:bg-flixDark-800 md:absolute flex right-[0px] bottom-0 w-full overflow-x-hidden sm:h-[10vh] overflow-y-hidden md:w-[50%] md:h-screen">
+                <div className="relative md:absolute flex right-[0px] bottom-0 w-full overflow-x-hidden sm:h-[10vh] overflow-y-hidden md:w-[50%] md:h-screen">
 
                     <img src={phoneB} alt="" className="relative bottom-[-100px] right-[0px] rounded-md w-[20rem] md:w-[25rem] md:absolute z-[99]" />
 
