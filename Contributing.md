@@ -72,6 +72,12 @@ Install PostgreSQL:
     REFRESH_TOKEN_SECRET="dfvdfv"
 
     MAX_API_REQUEST_COUNT = 100
+
+    CLOUDINARY_NAME="dsfvcdsvc"
+
+    CLOUDINARY_KEY="fgbfgbb"
+
+    CLOUDINARY_SECRET="gdfbgfbf"
 ```
 
 If a new `.env` variable is added, update `.env.development` and also navigate to `/src/config` and update all exported `env`
@@ -85,6 +91,11 @@ If a new `.env` variable is added, update `.env.development` and also navigate t
 
     export const MAX_API_REQUEST = process.env.MAX_API_REQUEST_COUNT
 
+    export const CLOUDINARY_NAME = process.env.CLOUDINARY_NAME
+
+    export const CLOUDINARY_KEY = process.env.CLOUDINARY_KEY
+
+    export const CLOUDINARY_SECRET = process.env.CLOUDINARY_SECRET
 ```
 
 ## This API uses `Prisma ORM` for managing `Postgresql Database`. So it compulsory you have postgresql installed, if not follow the link below on setting up postgresql and prisma orm on your pc
