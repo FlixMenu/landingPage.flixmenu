@@ -142,7 +142,7 @@ function WaitListForm({ isVisible, closeMainModal }) {
                 <br />
                 <div className={`inp-cont w-full h-full p-4 absolute top-[35%] ${inputHide ? "scale-[.1]" : "scale-[1]"} transition-all`}>
                     <small className={`text-red-500`}>{error === null ? "" : error}</small>
-                    <input type="text" className="rounded-md w-full px-3 py-3 bg-flixDark-800 text-flixWhite-200 border-0 outline-none" placeholder="john@mail.com" onChange={(e) => setMail(e.target.value)} />
+                    <input type="text" value={mail} className="rounded-md w-full px-3 py-3 bg-flixDark-800 text-flixWhite-200 border-0 outline-none" placeholder="john@mail.com" onChange={(e) => setMail(e.target.value)} />
                 </div>
 
                 <div className="bottom w-full h-auto p-3 bg-flixDark-600 absolute bottom-0 left-0 flex flex-row align-center items-center justify-between">
