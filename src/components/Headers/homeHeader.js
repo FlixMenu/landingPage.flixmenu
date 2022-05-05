@@ -35,9 +35,9 @@ function HomeHeader() {
     }
 
     return (
-        <div className="relative w-screen h-[150vh] md:h-screen overflow-y-hidden mx-auto bg-flixDark-800 md:p-0">
+        <div className="relative w-screen h-[auto] md:h-screen overflow-hidden mx-auto bg-flixDark-600 md:p-0">
             <Navbar />
-            <div className="relative top-0 left-0 flex flex-row align-center justify-between  w-screen h-screen flex-wrap md:flex-nowrap md:flex-row lg:container mx-auto">
+            <div className="relative top-0 left-0 flex flex-row align-center justify-between overflow-hidden w-screen h-auto flex-wrap md:flex-nowrap md:flex-row lg:container mx-auto md:h-screen">
 
                 <div className="relative md:absolute top-10 w-full  flex align-center justify-center flex-col h-auto md:w-[50%] md:h-screen">
                     <div className="md:ml-[20px] md:w-[500px] h-[450px] p-3 md:p-0 sm:p-12 z-10">
@@ -64,7 +64,7 @@ function HomeHeader() {
                         </div>
                     </div>
                 </div>
-                <div className="relative md:absolute flex right-[0px] bottom-[-10px] w-full h-[auto] overflow-x-hidden overflow-y-hidden md:w-[50%] md:h-screen">
+                <div className="relative hidden md:absolute right-[0px] bottom-[-10px] w-full h-[auto] overflow-x-hidden overflow-y-hidden md:w-[50%] md:h-screen md:flex">
 
                     <img src={phoneB} alt="" className="relative bottom-[-80px] right-[0px] rounded-md w-[20rem] md:w-[25rem] md:absolute md:right-0 md:-[-80px] z-[99]" />
 
@@ -106,8 +106,8 @@ function SideBar() {
     }
 
     return (
-        <div className={`fixed top-0 left-0 w-screen ${isToggled ? "h-[100vh]" : "h-[0vh]"} transition-all overflow-hidden z-[999] container flex flex-col align-center items-center justify-center bg-flixDark-900 sidebar-cont`}>
-            <ul className="m-0 p-0 flex flex-col align-center items-center justify-center w-full h-full">
+        <div className={`fixed visible top-0 left-0 w-screen ${isToggled ? "h-[100vh]" : "h-[0vh]"} transition-all overflow-hidden z-[999] container flex flex-col align-center items-center justify-center bg-flixDark-900 sidebar-cont md:invisible`}>
+            <ul className="m-0 p-0 flex flex-col align-center items-center justify-center">
                 <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>Home</li>
                 <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>About</li>
                 <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>Services</li>
