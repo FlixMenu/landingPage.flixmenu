@@ -39,7 +39,7 @@ function HomeHeader() {
             <Navbar />
             <div className="relative top-0 left-0 flex flex-row align-center justify-between  w-screen h-screen flex-wrap md:flex-nowrap md:flex-row lg:container mx-auto">
 
-                <div className="relative md:absolute top-0 w-full  flex align-center justify-center flex-col h-auto md:w-[50%] md:h-screen">
+                <div className="relative md:absolute top-10 w-full  flex align-center justify-center flex-col h-auto md:w-[50%] md:h-screen">
                     <div className="md:ml-[20px] md:w-[500px] h-[450px] p-3 md:p-0 sm:p-12 z-10">
                         <h1 className="text-[30px] md:text-[36px] font-extrabold text-flixWhite-200 w-full px-0 py-5">
                             Digitalizing
@@ -66,7 +66,7 @@ function HomeHeader() {
                 </div>
                 <div className="relative md:absolute flex right-[0px] bottom-[-10px] w-full h-[auto] overflow-x-hidden overflow-y-hidden md:w-[50%] md:h-screen">
 
-                    <img src={phoneB} alt="" className="relative bottom-[-80px] right-[0px] rounded-md w-[20rem] md:w-[25rem] md:absolute md:-[-80px] z-[99]" />
+                    <img src={phoneB} alt="" className="relative bottom-[-80px] right-[0px] rounded-md w-[20rem] md:w-[25rem] md:absolute md:right-0 md:-[-80px] z-[99]" />
 
                     <img src={phoneA} alt="" className="relative bottom-[-150px] right-[220px] rounded-md w-[20rem] md:w-[20rem] md:absolute md:right-[250px] md:bottom-[-80px]" />
                 </div>
