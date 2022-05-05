@@ -18,8 +18,12 @@
       overflow-x:hidden;
       @apply bg-flixDark-800
     }
+}
 
-    .show-waitlist-box{
-     
-    }
+html{
+  scroll-behavior: smooth;
+}
+
+.show-waitlist-box{
+  color:rgb(19, 16, 33);
 }
