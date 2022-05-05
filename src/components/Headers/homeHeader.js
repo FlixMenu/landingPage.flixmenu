@@ -37,10 +37,10 @@ function HomeHeader() {
     return (
         <div className="relative w-screen h-[auto] md:h-screen overflow-hidden mx-auto bg-flixDark-600 md:p-0">
             <Navbar />
-            <div className="relative top-0 left-0 flex flex-row align-center justify-between overflow-hidden w-screen h-auto flex-wrap md:flex-nowrap md:flex-row lg:container mx-auto md:h-screen">
+            <div className="container relative top-0 left-0 flex flex-row align-center justify-between overflow-hidden w-full h-auto flex-wrap md:flex-nowrap md:flex-row mx-auto md:h-screen">
 
                 <div className="relative md:absolute top-10 w-full  flex align-center justify-center flex-col h-auto md:w-[50%] md:h-screen">
-                    <div className="md:ml-[20px] md:w-[500px] h-[450px] p-3 md:p-0 sm:p-12 z-10">
+                    <div className="md:ml-[20px] md:w-[500px] h-[500px] p-3 md:p-0 sm:p-12 z-10">
                         <h1 className="text-[30px] md:text-[36px] font-extrabold text-flixWhite-200 w-full px-0 py-5">
                             Digitalizing
                             <span className="text-flixWhite-800 font-normal"> &</span>{" "}
@@ -106,7 +106,7 @@ function SideBar() {
     }
 
     return (
-        <div className={`fixed visible top-0 left-0 w-screen ${isToggled ? "h-[100vh]" : "h-[0vh]"} transition-all overflow-hidden z-[999] container flex flex-col align-center items-center justify-center bg-flixDark-900 sidebar-cont md:invisible`}>
+        <div className={`fixed visible top-0 left-0 right-0 m-0 w-screen ${isToggled ? "h-[100vh]" : "h-[0vh]"} transition-all overflow-hidden z-[999] container flex flex-col align-center items-center justify-center bg-flixDark-900 sidebar-cont md:invisible`}>
             <ul className="m-0 p-0 flex flex-col align-center items-center justify-center">
                 <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>Home</li>
                 <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>About</li>
