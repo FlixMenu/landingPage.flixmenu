@@ -41,7 +41,7 @@ function HamburgerMenu() {
     const { isToggled, setIsToggled, toggleMenu, } = useContext(DataContext)
 
     return (
-        <div className={`p-2 w-[55px] h-auto flex align-center justify-center items-center flex-col opacity-[.7] ${isToggled ? "scale-[.99]" : "scale-[.75]"} transition-all absolute top-6 right-10 z-[1000] cursor-pointer md:hidden hover:opacity-[1]`} onClick={toggleMenu}>
+        <div className={`p-2 w-[55px] h-auto flex align-center justify-center items-center flex-col opacity-[.7] ${isToggled ? "scale-[.99]" : "scale-[.75]"} transition-all absolute top-6 right-5 z-[1000] cursor-pointer md:hidden hover:opacity-[1]`} onClick={toggleMenu}>
             <span className={`w-full h-[2px] p-[2px] ${isToggled ? "rotate-[-45deg]" : ""} transition-all rounded-lg bg-flixWhite-200 mb-[5px]`}></span>
             <span className={`w-full h-[2px] p-[2px] ${isToggled ? "translate-x-[200px]" : ""} transition-all rounded-lg bg-flixWhite-200 mb-[5px]`}></span>
             <span className={`w-full h-[2px] p-[2px] ${isToggled ? "rotate-[45deg] translate-y-[-17px]" : ""} transition-all rounded-lg bg-flixWhite-200 mb-[5px]`}></span>
