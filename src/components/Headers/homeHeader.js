@@ -1,8 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import { Navbar } from "..";
 import { validateEmail } from "../../helpers/util";
-import sleep from "../../helpers/sleep";
+import DataContext from "../../context/Datacontext";
 
+import sleep from "../../helpers/sleep";
 import phoneA from "../../assets/img/mockup/phoneA.png"
 import phoneB from "../../assets/img/mockup/phoneB.png"
 import avatar from "../../assets/img/avatar.png"
@@ -34,7 +35,7 @@ function HomeHeader() {
     }
 
     return (
-        <div className="relative w-screen h-[auto] h-max-[100vh] overflow-x-hidden max-auto bg-flixDark-800">
+        <div className="relative w-screen h-[150vh] md:h-screen overflow-y-hidden mx-auto bg-flixDark-800 md:p-0">
             <Navbar />
             <div className="relative top-0 left-0 flex flex-row align-center justify-between  w-screen h-screen flex-wrap md:flex-nowrap md:flex-row lg:container mx-auto">
 
@@ -63,15 +64,18 @@ function HomeHeader() {
                         </div>
                     </div>
                 </div>
-                <div className="relative md:absolute flex right-[0px] bottom-0 w-full overflow-x-hidden sm:h-[10vh] overflow-y-hidden md:w-[50%] md:h-screen">
+                <div className="relative md:absolute flex right-[0px] bottom-[-10px] w-full h-[auto] overflow-x-hidden overflow-y-hidden md:w-[50%] md:h-screen">
 
-                    <img src={phoneB} alt="" className="relative bottom-[-100px] right-[0px] rounded-md w-[20rem] md:w-[25rem] md:absolute z-[99]" />
+                    <img src={phoneB} alt="" className="relative bottom-[-80px] right-[0px] rounded-md w-[20rem] md:w-[25rem] md:absolute md:-[-80px] z-[99]" />
 
-                    <img src={phoneA} alt="" className="relative bottom-[-150px] right-[250px] rounded-md w-[20rem] md:w-[20rem] md:absolute" />
+                    <img src={phoneA} alt="" className="relative bottom-[-150px] right-[220px] rounded-md w-[20rem] md:w-[20rem] md:absolute md:right-[250px] md:bottom-[-80px]" />
                 </div>
 
                 {/* waitlist component */}
                 <WaitListForm isVisible={isVisible} closeMainModal={closeModal} />
+
+                {/* sidebar */}
+                <SideBar />
             </div>
         </div>
     );
@@ -79,6 +83,38 @@ function HomeHeader() {
 
 export default HomeHeader;
 
+
+function SideBar() {
+    const { isToggled, setIsToggled } = useContext(DataContext)
+    const [showlist, setShowList] = useState(false)
+
+    useEffect(() => {
+        (async () => {
+            if (isToggled) {
+                await sleep(.4)
+                return setShowList(true)
+            }
+            setShowList(false)
+        })()
+    }, [isToggled])
+
+    async function hideSidebarOnClick() {
+        await sleep(.1)
+        setShowList(false)
+        await sleep(.1)
+        setIsToggled(false)
+    }
+
+    return (
+        <div className={`fixed top-0 left-0 w-screen ${isToggled ? "h-[100vh]" : "h-[0vh]"} transition-all overflow-hidden z-[999] container flex flex-col align-center items-center justify-center bg-flixDark-900 sidebar-cont`}>
+            <ul className="m-0 p-0 flex flex-col align-center items-center justify-center w-full h-full">
+                <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>Home</li>
+                <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>About</li>
+                <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>Services</li>
+            </ul>
+        </div>
+    )
+}
 
 function WaitListForm({ isVisible, closeMainModal }) {
     const boxWaitlist = useRef()
@@ -94,7 +130,7 @@ function WaitListForm({ isVisible, closeMainModal }) {
         if (isVisible) {
             setTimeout(() => {
                 setTranslateY(true)
-            }, 500);
+            }, 300);
         }
     }, [isVisible])
 
@@ -129,8 +165,8 @@ function WaitListForm({ isVisible, closeMainModal }) {
     }
 
     return (
-        <div className={`fixed top-0 left-0 flex flex-col align-center items-center justify-center w-screen h-screen z-[999] bg-flixDark-900 waitlist-modal invisible`}>
-            <div className={`relative w-[320px] h-[350px] bg-flixDark-500 text-flixWhite-200 rounded-md p-4 overflow-hidden flex flex-col align-center items-center justify-start waitlist-box transition-all ${translateY === false ? "translate-y-[500px]" : "translate-y-[0px]"}`} ref={boxWaitlist}>
+        <div className={`fixed top-0 left-0 flex flex-col align-center items-center justify-center w-screen h-screen z-[1000] bg-flixDark-900 waitlist-modal invisible`}>
+            <div className={`relative w-[320px] h-[350px] bg-flixDark-500 text-flixWhite-200 rounded-md p-4 overflow-hidden flex flex-col align-center items-center justify-start waitlist-box transition-all ${translateY === false ? "translate-y-[900px]" : "translate-y-[0px]"}`} ref={boxWaitlist}>
                 <div className="top w-full">
                     <p className={`${success ? "text-green-300" : "text-flixWhite-200"} p-4  flex flex-col align-center items-center justify-center text-[16px] font-bold`}>
                         {success ? "Email Added Successfully" : "JOIN THE WAITLIST"}
