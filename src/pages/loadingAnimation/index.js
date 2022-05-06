@@ -1,9 +1,13 @@
-import { useEffect, useRouter } from "react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router";
 import Corner from "../../components/Corner";
 import CoveredPlate from "../../components/CoveredPlate";
 
 const LoadingAnimation = (props) => {
-    useEffect(() => {}, 1000)
+    const navigate = useNavigate();
+    useEffect(() => {
+        navigate('/');
+    }, 2500)
 
     return (
         <div className="w-screen h-screen bg-gradient-to-br from-[#FDA53F] to-[#FF174C] flex items-center justify-center">
