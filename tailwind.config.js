@@ -9,6 +9,8 @@ module.exports = {
         "flixOrange": {
           200: "#fda63f",
           500: "#fd8141",
+          600: "#FDA53F",
+          700: "#FF174C",
           800: "#ff6b3d"
         },
         "flixWhite": {
