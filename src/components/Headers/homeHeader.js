@@ -56,8 +56,8 @@ function HomeHeader() {
                             within an organization.
                         </p>
                         <br />
-                        {/* form */}
                         <div className="flex align-start justify-start md:flex-nowrap sm:flex-wrap p-3 mt-[30px] md:p-0">
+                            <a id="waitlist" className="invisible"></a>
                             <button onClick={openModal} className="text-center px-0 py-4 rounded-full font-bold bg-flixOrange-200 text-flixDark-800 ml-[-10px] sm:mt-3 md:mt-0 w-full md:ml-0 hover:bg-flixOrange-500  md:w-[50%]">
                                 GET EARLY ACCESS
                             </button>
