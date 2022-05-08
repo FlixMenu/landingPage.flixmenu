@@ -7,13 +7,13 @@ function Home() {
             {/* show flash screen on startup */}
 
             {
-                true ?
+                false ?
                     <FlashScreen />
                     :
                     <React.Fragment>
                         <HomeHeader />
-                        <br />
-                        <h1>asdsadc</h1>
+                        {/* <br />
+                        <h1>asdsadc</h1> */}
                     </React.Fragment>
             }
         </div>
