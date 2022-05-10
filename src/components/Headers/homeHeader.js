@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
+import { Link } from 'react-router-dom';
 import { Navbar } from "..";
 import { validateEmail } from "../../helpers/util";
 import DataContext from "../../context/Datacontext";
@@ -110,7 +111,7 @@ function SideBar() {
             <ul className="m-0 p-0 flex flex-col align-center items-center justify-center">
                 <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>Home</li>
                 <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>About</li>
-                <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}>Services</li>
+                <li className={`text-[30px] p-2 ${showlist ? "scale-[1]" : "scale-[0]"} text-center w-full font-extrabold text-flixWhite-400 cursor-pointer transition-all mt-[10px] mb-[10px] hover:text-flixOrange-200`} onClick={hideSidebarOnClick}><Link to="/services">Services</Link></li>
             </ul>
         </div>
     )
