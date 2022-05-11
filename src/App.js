@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import { Home } from "./pages"
 import Aos from 'aos'
 
-Aos.init()
+Aos.init({ duration: "900" })
 
 export default function App() {
   return (
