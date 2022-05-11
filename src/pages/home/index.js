@@ -10,16 +10,11 @@ function Home() {
         <div className="relative mx-auto w-screen h-screen bg-flixDark-800">
             {/* show flash screen on startup */}
 
-            {
-                !flashscreenVisibility ?
-                    <FlashScreen />
-                    :
-                    <React.Fragment>
-                        <HomeHeader />
-                        <br />
-                        <AboutComp />
-                    </React.Fragment>
-            }
+            <React.Fragment>
+                <HomeHeader />
+                <br />
+                <AboutComp />
+            </React.Fragment>
         </div>
     )
 }

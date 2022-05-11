@@ -27,3 +27,8 @@ html{
 .show-waitlist-box{
   color:rgb(19, 16, 33);
 }
+
+.patternedBackground {
+  background-image: url("../public/ServicesCardBackground.svg");
+  background-size: cover;
+}
