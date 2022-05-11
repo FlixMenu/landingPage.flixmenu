@@ -36,7 +36,7 @@ function HomeHeader() {
     }
 
     return (
-        <div className="relative w-screen h-screen md:h-screen overflow-hidden mx-auto bg-flixDark-600 md:p-0">
+        <div id="header" className="relative w-screen h-screen md:h-screen overflow-hidden mx-auto bg-flixDark-600 md:p-0">
             <Navbar />
             <div className="container relative top-0 left-0 flex flex-row align-center justify-between overflow-hidden w-full h-auto flex-wrap md:flex-nowrap md:flex-row mx-auto md:h-screen">
 
