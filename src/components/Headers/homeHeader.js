@@ -8,6 +8,7 @@ import sleep from "../../helpers/sleep";
 import phoneA from "../../assets/img/mockup/phoneA.png"
 import phoneB from "../../assets/img/mockup/phoneB.png"
 import avatar from "../../assets/img/avatar.png"
+import { Spinner } from "../Loders";
 
 function HomeHeader() {
 
@@ -63,8 +64,9 @@ function HomeHeader() {
                             <div data-aos="zoom-in" id="mailInput" className="w-full px-0 py-0 bg-flixDark-5100 border-[2px] border-dashed border-flixDark-500 rounded-[30px] flex flex-row items-center justify-between mr-5 relative overflow-hidden">
                                 <input type="text" placeholder="flix@mail.com" className="w-[60%] h-full border-none outline-none bg-none py-3 px-3 font-light" style={{ background: "none" }} />
 
-                                <button className="px-2 py-[17px] bg-flixDark-500 w-[45%] text-flixWhite-200 rounded-[30px]">
+                                <button className="px-2 py-[17px] bg-flixDark-500 w-[45%] text-flixWhite-200 rounded-[30px] flex flex-row items-center justify-around">
                                     Join WaitList
+                                    {/* <Spinner size="md" color="white" /> */}
                                 </button>
                             </div>
                         </div>
