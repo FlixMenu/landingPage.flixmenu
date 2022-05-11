@@ -4,7 +4,7 @@ import { FaGithub, FaTwitter, FaLinkedin, FaPaypal } from 'react-icons/fa'
 
 function Footer() {
     return (
-        <div className="w-full h-auto py-[30px] bg-flixDark-905 text-center flex flex-col items-center justify-center">
+        <div id="footer" className="w-full h-auto py-[30px] bg-flixDark-905 text-center flex flex-col items-center justify-center">
             <p className='font-light text-white'>FlixMenu &copy; copyright </p>
             <p className='font-light text-[12px] text-flixWhite-400'> {new Date().getFullYear()} All right reserved. </p>
             <br />
