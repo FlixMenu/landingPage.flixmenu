@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import DataContext from "../../context/Datacontext";
-import { AboutComp, HomeHeader, FlashScreen } from '../../components'
+import { AboutComp, HomeHeader, FlashScreen, Services, Footer } from '../../components'
+import { PageLoadingLoader } from "../../components/Loders";
 
 function Home() {
 
@@ -11,13 +12,23 @@ function Home() {
             {/* show flash screen on startup */}
 
             {
-                !flashscreenVisibility ?
-                    <FlashScreen />
+                flashscreenVisibility ?
+
+                    <div className="w-screen h-screen flex flex-col items-center justify-center">
+                        <PageLoadingLoader />
+                        <small>Loading...</small>
+                    </div>
                     :
+
                     <React.Fragment>
                         <HomeHeader />
                         <br />
                         <AboutComp />
+                        <br />
+                        <a href="" id='#about'></a>
+                        <Services />
+                        <br />
+                        <Footer />
                     </React.Fragment>
             }
         </div>
