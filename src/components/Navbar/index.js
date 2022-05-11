@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import DataContext from '../../context/Datacontext'
 
+import { FaPaypal } from "react-icons/fa"
+
 import tplogo from "../../assets/img/tp-logo.png"
 
 function Navbar() {
@@ -26,6 +28,9 @@ function Navbar() {
                         <li className="p-2 text-flixWhite-400 hover:text-flixWhite-200">
                             <Link to="#services">Services</Link>
                         </li>
+                        <a href="https://www.paypal.com/paypalme/flixmenu" target="_blank" className="px-5 py-1 bg-flixDark-500 rounded-[30px] flex flex-row items-center justify-start border-[2px] border-dashed border-flixWhite-800">
+                            <FaPaypal className='mr-2' /> Support
+                        </a>
                     </ul>
                 </div>
 
