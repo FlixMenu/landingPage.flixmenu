@@ -46,7 +46,8 @@ const FlashScreen = (props) => {
                         <Corner width={40} height={40} position='bottom-left' className="absolute" animate={{ x: [-24, -60, -48], y: [-72, -36, -48] }} initial={{ y: -72, x: -24 }} />
                     </motion.div>
                 </div>
-                )
+            </div>}
+        </div>
+    )
 }
-
-                export default FlashScreen;
+export default FlashScreen;

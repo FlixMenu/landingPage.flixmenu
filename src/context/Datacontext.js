@@ -9,7 +9,7 @@ export default DataContext
 export function DataProvider({ children }) {
 
     const [isToggled, setIsToggled] = useState(false)
-    const [flashscreenVisibility, setFlashScreenVisibility] = useState(false)
+    const [flashscreenVisibility, setFlashScreenVisibility] = useState(true)
 
     // reset the visibility on certain milliseconds
     const FlashScreenTimeout = 5;
@@ -17,7 +17,7 @@ export function DataProvider({ children }) {
     useEffect(() => {
         (async () => {
             await sleep(FlashScreenTimeout)
-            setFlashScreenVisibility(true)
+            setFlashScreenVisibility(false)
         })()
     }, [])
 

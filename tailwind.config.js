@@ -24,7 +24,8 @@ module.exports = {
           600: "#131021",
           800: "#1f1d2b",
           900: "rgba(0,0,0,.9)",
-          transparentDark: "rgba(19, 16, 33, .85)"
+          transparentDark: "rgba(19, 16, 33, .85)",
+          905: "#100e1a"
         },
       },
       width: {
